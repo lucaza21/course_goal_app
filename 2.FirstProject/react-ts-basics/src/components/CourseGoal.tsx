@@ -1,15 +1,17 @@
+import type { ReactNode } from "react";
 
 type CourseGoalProps = {
     title: string; 
-    description:string;
+    //description:string;
+    children: ReactNode
 }
 
-function CourseGoal( {title, description}: CourseGoalProps ) {
+function CourseGoal( {title, children}: CourseGoalProps ) {
   return (
     <article>
         <div>
             <h2>{title}</h2>
-            <p>{description}</p>
+            {children}
         </div>
         <button>DELETE</button>
     </article>
