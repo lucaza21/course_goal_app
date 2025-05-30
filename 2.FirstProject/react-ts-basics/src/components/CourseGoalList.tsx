@@ -12,7 +12,7 @@ function CourseGoalList( {goals, onDeleteGoal}: CourseGoalListProps ) {
   if (goals.length === 0){
     return (
         <InfoBox mode="hint">
-            You have no Course goals yer, Start adding some!
+            You have no Course goals yet, Start adding some!
         </InfoBox>
     )
   }
@@ -21,7 +21,7 @@ function CourseGoalList( {goals, onDeleteGoal}: CourseGoalListProps ) {
 
   if (goals.length >= 4) {
     warningBox = (
-        <InfoBox mode="warning">
+        <InfoBox mode="warning" severity='high'>
             You have no Course goals yet, Start adding some!
         </InfoBox>
     )
