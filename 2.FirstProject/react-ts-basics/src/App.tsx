@@ -32,7 +32,7 @@ function App() {
       setGoals(prevGoals => prevGoals.filter( (goal) => goal.id != id))
     }
   return (
-    <>
+    <main>
       <Header image={{src: goalsImg, alt:"A list of goals"}}>
        <h1> Your Course Goal </h1>
       </Header>
@@ -40,7 +40,7 @@ function App() {
       <NewGoal onAddGoal={handleAddGoal}/>
       <CourseGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
       
-    </>
+    </main>
   )
 }
 
